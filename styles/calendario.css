@@ -26,8 +26,7 @@ h2 {
 }
 
 body {
-  background: var(--cinza-azulado)
-    url("../resources/texture-1.png");
+  background: var(--cinza-azulado) url("../resources/texture-1.png");
   color: #f8f0d9;
   gap: 2rem;
 }
@@ -82,9 +81,210 @@ body {
 }
 
 .container-story {
-  height: 20vh;
   width: 100%;
   background: #000;
+}
+
+.container-story h3 {
+  font-size: 3em;
+  opacity: 0.9;
+}
+
+.container-story p {
+  margin-bottom: 1em;
+}
+
+.container-story span {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.scroll-nav {
+  position: sticky;
+  top: 0;
+  color: #fff;
+  padding: 2em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  z-index: 10000;
+  user-select: none;
+  background: #000;
+  box-shadow: 0px -5px 20px 20px #000, -10px 5px 20px 20px #000;
+}
+
+.scroll-nav a {
+  color: var(--text-color);
+  transition: all 1s;
+}
+
+#crepusculo {
+  margin: 2em;
+}
+
+.mascara-1 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mascara-1 img {
+  width: 100%;
+  object-fit: cover; /* garante que a imagem preencha o espaço da máscara sem distorcer */
+
+  -webkit-mask-image: url("../resources/mask-4.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-4.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  display: block;
+}
+
+#primordiais {
+  margin: 2em;
+  position: relative;
+  margin-bottom: 5em;
+}
+
+#primordiais span,
+#deuses span,
+#dragoes span,
+#sombras span,
+#herois span {
+  width: 35%;
+}
+
+.mascara-2 {
+  position: absolute;
+  right: 0;
+  top: -20%;
+  transform: translateX(30%);
+}
+
+#primordiais .mascara-2 img {
+  width: 70%;
+  height: auto;
+
+  -webkit-mask-image: url("../resources/mask-3.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-3.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#deuses {
+  padding: 1rem;
+  z-index: 10;
+}
+
+.mascara-3 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4em;
+  margin-bottom: -2em;
+}
+
+#deuses .mascara-3 img {
+  width: 70%;
+  height: auto;
+
+  -webkit-mask-image: url("../resources/mask-2.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-2.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#dragoes {
+  margin: 2em;
+  position: relative;
+  height: 35vh;
+}
+
+#dragoes span {
+  width: 50%;
+}
+
+.mascara-4 {
+  position: absolute;
+  left: 0;
+  top: -20%;
+  transform: translateX(-40%); /* aqui interfere na distancia (2)*/
+}
+
+#dragoes .mascara-4 img {
+  width: 100%;
+  height: auto;
+
+  -webkit-mask-image: url("../resources/mask-3.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-3.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transform: scaleX(-1);
+}
+
+#sombras {
+  margin: 2em;
+  height: 40vh;
+  position: relative;
+}
+
+.mascara-5 {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  transform: translateX(40%);
+}
+
+#sombras .mascara-5 img {
+  width: 100%;
+  height: auto;
+
+  filter: brightness(70%);
+
+  -webkit-mask-image: url("../resources/mask-3.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-3.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#herois {
+  margin: 2em;
+  height: 60vh;
 }
 
 /* responsividade zzzzzz */
