@@ -1,31 +1,3 @@
-.img-fade-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-
-  display: block;
-
-  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-
-  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-.img-fade-top {
-  -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
-  mask-image: linear-gradient(to top, black 80%, transparent 100%);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 #container {
   color: #000;
   text-align: center;
@@ -275,7 +247,7 @@ h2 {
   height: 100px;
   margin-top: -5em;
   position: absolute;
-  background-image: url('../resources/footer.png');
+  background-image: url('../resources/footer-2.png');
   z-index: 20;
 }
 
