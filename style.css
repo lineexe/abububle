@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "MrDarcy";
+  src: url("resources/MrDarcyMedium.ttf");
+}
+
+:root {
+  --text-color: #fff;
+  --text-menu: #d4d4d4;
+  --text-focus: #fff;
+  --cinza-azulado: #1c2630;
+  --title-color: #242b31;;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* user-select: none; */
+}
+
+body {
+  font-family: MrDarcy;
+  color: var(--text-focus);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: var(--text-focus);
+  cursor: pointer;
+  font-weight: 400;
+  transform: scale(1.2);
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+  color: var(--text-color);
+}
+
+ul {
+  justify-content: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-top: 1.3em;
+}
+
+span {
+  background: linear-gradient(to right, #ebebeb, #acacac);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+header {
+  height: 110vh;
+}
+
+header ul {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  position: relative;
+  z-index: 2;
+}

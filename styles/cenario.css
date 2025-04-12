@@ -1,0 +1,295 @@
+.img-fade-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+
+  display: block;
+
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.img-fade-top {
+  -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
+  mask-image: linear-gradient(to top, black 80%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+#container {
+  color: #000;
+  text-align: center;
+}
+
+#introducao {
+  margin-top: 2em;
+  padding: 2em;
+}
+
+#introducao span {
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--title-color)
+}
+
+.desc {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.8;
+  font-size: 0.9m;
+  padding-bottom: 1.3em;
+}
+
+.description-world {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  letter-spacing: 3px;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.text-description {
+  width: 70%;
+}
+
+.scroll-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 2em;
+  margin-top: -1em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  z-index: 10000;
+  user-select: none;
+  box-shadow: 0px -5px 20px 20px #fff, -10px 5px 20px 20px #fff;
+}
+
+.scroll-nav a {
+  color: var(--cinza-azulado);
+  transition: all 1s;
+}
+
+#criacao {
+  padding: 3em 5em 2em 5em; /* ↑ → ↓ ← */
+  text-align: start;
+}
+
+#criacao .fix {
+  display: flex;
+  position: relative;
+}
+
+.desc-criacao {
+  width: 65%;
+  margin-top: 0.5em;
+  line-height: 1.1em;
+  letter-spacing: 2px;
+}
+
+/* mascara da criacao */
+.mascara-1 {
+  position: absolute;
+  right: 0;
+  top: -30%;
+  transform: translateX(40%);
+}
+
+#criacao .mascara-1 img {
+  width: 100%;
+  height: auto;
+
+  -webkit-mask-image: url("../resources/mask.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.desc-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.left {
+  text-align: start;
+}
+
+.right {
+  text-align: end;
+}
+
+#geografia {
+  position: relative;
+  margin-top: 5em;
+  height: 50em;
+}
+
+.text-geografia{
+  width: 65%;
+  font-size: 1.3em;
+  color: var(--text-color);
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#geografia h2 {
+  text-align: end;
+  margin: 4em 5em -1em 0;
+}
+
+.desc-geografia {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mascara-2 {
+  position: absolute;
+  z-index: -10;
+}
+
+#geografia .mascara-2 img {
+  width: 90em;
+  height: auto;
+
+  filter: brightness(50%); /* filtro escuro */
+
+  -webkit-mask-image: url("../resources/mask-4.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  mask-image: url("../resources/mask-4.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#magia {
+  margin: 5em 0;
+  text-align: center;
+}
+
+.desc-magic {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.desc-charac {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  background-image: url('../resources/card.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; 
+  height: 500px;
+  width: 400px;
+  text-align: center;
+  margin-left: -5em;
+  margin-top: -5em;
+  transition: all 0.8s ease;
+  user-select: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card p {
+  font-style: italic;
+  opacity: 0.9;
+  width: 70%;
+}
+
+.desc-charac b {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+#aventuras {
+  position: relative;
+}
+
+.desc-aventura-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.desc-aventura-start p {
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  color: var(--text-color);
+  letter-spacing: 2px;
+}
+
+.grama {
+  width: 100%;
+  height: 100px;
+  margin-top: -5em;
+  position: absolute;
+  background-image: url('../resources/footer.png');
+  z-index: 20;
+}
+
+#aventuras img {
+  width: 100%;
+  z-index: 0;
+  filter: brightness(40%);
+}
+
+.desc-aventura {
+  height: 20vh;
+  background-color: #000;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
