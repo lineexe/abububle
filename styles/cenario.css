@@ -265,3 +265,101 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .scroll-nav {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .desc {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .description-world,
+  .desc-div,
+  .desc-charac {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-description,
+  .left,
+  .right,
+  .text-geografia {
+    width: 90% !important;
+    text-align: center !important;
+  }
+
+  #criacao {
+    padding: 1em;
+  }
+
+  #geografia {
+    height: auto;
+    margin: 2em 0;
+  }
+
+  #geografia h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .desc-geografia {
+    flex-direction: column;
+  }
+
+  .text-geografia {
+    color: #000;
+  }
+
+  .mascara-2 {
+    display: none;
+  }
+
+  #magia {
+    margin: 0;
+  }
+
+  .desc-magic {
+    width: 95%;
+  }
+
+  .desc-charac img, .mascara-1 {
+    display: none;
+  }
+
+  .desc-charac {
+    margin: 0;
+  }
+
+  .card {
+    margin: 1em 0;
+  }
+
+  .desc-aventura-start {
+    flex-direction: column;
+  }
+
+  .desc-aventura-start p {
+    font-size: 0.9em;
+    margin-top: 1em;
+  }
+
+  .grama {
+    display: none;
+  }
+
+  .desc-aventura {
+    padding: 2em;
+    font-size: 0.7em;
+    text-align: center;
+  }
+}

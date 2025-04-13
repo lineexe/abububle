@@ -9,7 +9,7 @@
   --text-focus: #fff;
   --cinza-azulado: #1c2630;
   --cinza-claro: #e9dac7;
-  --title-color: #242b31;;
+  --title-color: #242b31;
 }
 
 * {
@@ -114,4 +114,37 @@ header h1 {
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+.escuro {
+  filter: brightness(30%);
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  header h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    z-index: 2;
+  }
+
+  .img-fade-bottom {
+    height: 100vh;
+    object-fit: cover;
+  }
 }

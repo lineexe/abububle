@@ -269,8 +269,6 @@ body {
   width: 100%;
   height: auto;
 
-  filter: brightness(70%);
-
   -webkit-mask-image: url("../resources/mask-3.png");
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -287,9 +285,142 @@ body {
   height: 60vh;
 }
 
-/* responsividade zzzzzz */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+    padding-top: 1em;
+  }
+
+  h2,
+  .container-story h3 {
+    font-size: 1.8em;
+  }
+
+  .scroll-nav {
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0.5em;
+  }
+
+  .scroll-nav a {
+    font-size: 0.9em;
+    transform: none;
+  }
+
+  .container-story span {
+    width: 80%;
+    flex-direction: column;
+    font-size: 1em;
+  }
+
+  .mascara-1 img,
+  .mascara-2 img,
+  .mascara-3 img,
+  .mascara-4 img,
+  .mascara-5 img {
+    width: 100%;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+  }
+
+  .mascara-2,
+  .mascara-4,
+  .mascara-5 {
+    position: static;
+    transform: none;
+    margin-top: 1em;
+  }
+
+  .month-card {
+    width: 80%;
+  }
+
   .calendar {
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #dragoes,
+  #sombras,
+  #herois {
+    height: auto;
+  }
+
+  .month-container h6 {
+    font-size: 1em;
+  }
+
+  .month-container p {
+    font-size: 0.9em;
+  }
+
+  ul,
+  li {
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    align-items: center;
+  }
+
+  #primordiais span,
+  #deuses span,
+  #dragoes span,
+  #sombras span,
+  #herois span {
+    width: 90%;
+  }
+
+  #primordiais .mascara-2 img,
+  #dragoes img,
+  #sombras img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2,
+  .container-story h3 {
+    font-size: 1.4em;
+  }
+
+  .scroll-nav a {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .container-story span {
+    font-size: 0.9em;
+    width: 95%;
+  }
+
+  .month-title {
+    font-size: 1.3rem;
+  }
+
+  .month-container h6 {
+    font-size: 0.9em;
+  }
+
+  .month-container p {
+    font-size: 0.8em;
+  }
+
+  #primordiais span,
+  #deuses span,
+  #dragoes span,
+  #sombras span,
+  #herois span {
+    width: 100%;
+  }
+
+  #primordiais .mascara-2 img,
+  #dragoes img,
+  #sombras img {
+    display: none;
   }
 }
