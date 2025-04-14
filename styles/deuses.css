@@ -1,0 +1,252 @@
+main {
+  margin: 0;
+  padding: 0;
+  font-family: "IM Fell English", "Garamond", serif;
+  color: #2e1f12;
+  margin-bottom: 3em;
+}
+
+body,
+main {
+  background: #917f53;
+  background-image: url("../resources/texture-2.png");
+}
+
+.container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background: #b29176f2;
+  background-image: url("../resources/paper.png");
+  background-size: contain;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.text-column {
+  margin-top: 40%;
+  column-count: 2;
+  column-gap: 2.5rem;
+  text-align: justify;
+}
+
+.text-column h2 {
+  color: #5b2c1f;
+  font-family: "MedievalSharp", cursive;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #c9bfa4;
+  padding-bottom: 0.3rem;
+}
+
+.text-column h3 {
+  font-size: 2.2rem;
+  color: #7b3d2c;
+  margin: 0;
+  font-family: "MedievalSharp", cursive;
+}
+
+.text-column p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  font-family: "IM Fell English", serif;
+}
+
+.text-column .highlight {
+  color: #7c3b2d;
+  font-weight: bold;
+  font-family: "MedievalSharp", cursive;
+}
+
+.mascara-1 {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  transform: translateX(0%);
+  z-index: 1000;
+}
+
+.mascara-1 img {
+  /* width: 1198px;
+  height: auto; */
+
+  width: 1197px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  -webkit-mask-image: url("../resources/mask-5.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+
+  mask-image: url("../resources/mask-5.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: top;
+}
+
+/* //// */
+.pagina {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #f5e5d9f2;
+  background-image: url("../resources/paper.png");
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  background-blend-mode: multiply;
+  transition: opacity 1s ease;
+}
+
+.ilustracao {
+  width: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  transform: translateX(0%);
+}
+
+.ilustracao img {
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+  width: 500px;
+  height: 800px;
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  -webkit-mask-image: url("../resources/mask-3.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+
+  mask-image: url("../resources/mask-3.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: top;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.conteudo h1 {
+  font-size: 2.5rem;
+  color: #7b2e2e;
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+.conteudo h2 {
+  font-size: 1.5rem;
+  color: #5e1f1f;
+  border-bottom: 1px solid #bfa980;
+  padding-bottom: 0.2rem;
+  margin-top: 2rem;
+}
+
+.conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1rem;
+  margin-top: 0.5em;
+}
+
+.coluna {
+  width: 55%;
+}
+
+.coluna-2 {
+  margin-top: 45em;
+  width: 40%;
+}
+
+.dropcap {
+  float: left;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-right: 0.5rem;
+  color: #842e2e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+}
+
+th,
+td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #c2b59b;
+}
+
+th {
+  text-align: left;
+  background-color: #eedec0;
+  opacity: 0.8;
+  color: #5a2d1f;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.menu-personagens {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../resources/footer-2.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 0 1em 0em;
+  z-index: 1000;
+  padding-bottom: 3em;
+}
+
+.menu-personagens button {
+  background: #0000004b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-family: "MedievalSharp", cursive;
+}
+
+.menu-personagens button:hover {
+  transform: scale(1.2);
+}
+
+.pagina {
+  display: none;
+}
+
+.pagina#mithra {
+  display: block;
+}

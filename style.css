@@ -3,6 +3,20 @@
   src: url("resources/MrDarcyMedium.ttf");
 }
 
+@font-face {
+  font-family: 'IM Fell English';
+  src: url('resources/IMFellEnglish-Regular.ttf') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MedievalSharp';
+  src: url('resources/MedievalSharp-Regular.ttf') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --text-color: #fff;
   --text-menu: #d4d4d4;
